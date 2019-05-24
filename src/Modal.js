@@ -18,6 +18,10 @@ class Modal extends Component {
     !prevProps.active && this.props.active && this.urlInput.focus();
   }
 
+  componentWillUnmount() {
+    document.removeEventListener("keypress", this._onKeyPress);
+  }
+
   _onKeyPress = e => {
     e.code === "Enter" && this.props.active && this.handleSubmit();
   };

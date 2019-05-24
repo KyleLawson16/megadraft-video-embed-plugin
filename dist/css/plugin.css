@@ -6,3 +6,90 @@
 /*
  * YOUR STYLES HERE
  */
+.megadraft-video-embed-plugin__modal {
+  font-size: 14px;
+  font-family: sans-serif;
+  z-index: 999999;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  width: 460px;
+  padding: 20px 10px 10px;
+  background-color: #555;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0px #555;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.megadraft-video-embed-plugin__modal input {
+  font-size: 14px;
+  font-family: sans-serif;
+  width: 460px;
+  padding: 0 0 4px 0;
+  border: none;
+  border-bottom: 1px solid #888;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 10px;
+  transition-duration: 200ms;
+}
+
+.megadraft-video-embed-plugin__modal input:focus {
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  transition-duration: 200ms;
+}
+
+.megadraft-video-embed-plugin__modal--error input {
+  color: red;
+  border-bottom: 1px solid red;
+  margin-bottom: 0px;
+}
+
+.megadraft-video-embed-plugin__modal--btn-cont {
+  width: 460px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.megadraft-video-embed-plugin__modal--btn-cont button {
+  margin-left: 10px;
+}
+
+.megadraft-video-embed-plugin__error-msg {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: red;
+  margin: 5px 0 10px 0;
+  text-align: left;
+}
+
+.megadraft-video-embed-plugin__button {
+  padding: 3px 10px;
+  background-color: #aaa;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  transition-duration: 200ms;
+}
+
+.megadraft-video-embed-plugin__button:hover {
+  background-color: #ccc;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.megadraft-video-embed-plugin__button:focus {
+  outline: none;
+}
+
+.megadraft-video-embed-plugin__button:active {
+  outline: none;
+}
