@@ -1,0 +1,96 @@
+/*
+ * Copyright (c) 2019, Kyle Lawson <kyle@kylelawson.io>
+ *
+ * License: MIT
+ */
+
+/*
+ * YOUR STYLES HERE
+ */
+
+.megadraft-video-embed-plugin {
+  &__modal {
+    font-size: 14px;
+    font-family: sans-serif;
+    z-index: 999999;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 460px;
+    padding: 20px 10px 10px;
+    background-color: #555;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px #555;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      font-size: 14px;
+      font-family: sans-serif;
+      width: 460px;
+      padding: 0 0 4px 0;
+      border: none;
+      border-bottom: 1px solid #888;
+      background: transparent;
+      color: #fff;
+      margin-bottom: 10px;
+      transition-duration: 200ms;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid #aaa;
+        transition-duration: 200ms;
+      }
+    }
+
+    &--error {
+      input {
+        color: red;
+        border-bottom: 1px solid red;
+        margin-bottom: 0px;
+      }
+    }
+
+    &--btn-cont {
+      width: 460px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      button {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__error-msg {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: red;
+    margin: 5px 0 10px 0;
+    text-align: left;
+  }
+
+  &__button {
+    padding: 3px 10px;
+    background-color: #aaa;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    transition-duration: 200ms;
+
+    &:hover {
+      background-color: #ccc;
+      transition-duration: 200ms;
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
+}
