@@ -16,18 +16,19 @@
     position: absolute;
     top: 0px;
     left: 50px;
-    width: 460px;
+    width: 260px;
     padding: 20px 10px 10px;
     background-color: #555;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0px #555;
     display: flex;
     flex-direction: column;
+    box-sizing: content-box;
 
     input {
       font-size: 14px;
       font-family: sans-serif;
-      width: 460px;
+      width: 260px;
       padding: 0 0 4px 0;
       border: none;
       border-bottom: 1px solid #888;
@@ -52,7 +53,7 @@
     }
 
     &--btn-cont {
-      width: 460px;
+      width: 260px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;

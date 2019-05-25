@@ -67,6 +67,7 @@ class Modal extends Component {
             this.urlInput = input;
           }}
           type="text"
+          placeholder="Enter a YouTube/Vimeo video url"
           value={url}
           onChange={e => this.setState({ url: e.target.value })}
         />

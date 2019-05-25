@@ -13,7 +13,7 @@
   position: absolute;
   top: 0px;
   left: 50px;
-  width: 460px;
+  width: 260px;
   padding: 20px 10px 10px;
   background-color: #555;
   border-radius: 5px;
@@ -22,12 +22,13 @@
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  box-sizing: content-box;
 }
 
 .megadraft-video-embed-plugin__modal input {
   font-size: 14px;
   font-family: sans-serif;
-  width: 460px;
+  width: 260px;
   padding: 0 0 4px 0;
   border: none;
   border-bottom: 1px solid #888;
@@ -50,7 +51,7 @@
 }
 
 .megadraft-video-embed-plugin__modal--btn-cont {
-  width: 460px;
+  width: 260px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;

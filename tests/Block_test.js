@@ -10,11 +10,11 @@ import { mount } from "enzyme";
 import Block from "../src/Block";
 
 describe("Block", function() {
-  let caption, updateData, data;
+  let iframe, updateData, data;
 
   beforeEach(function() {
     data = {
-      caption: "media caption"
+      embedData: { type: "vimeo", id: "103959209" }
     };
     updateData = jest.fn();
     const container = {
@@ -28,23 +28,14 @@ describe("Block", function() {
       <Block container={container} blockProps={container} data={data} />
     );
 
-    caption = wrapper.find("BlockInput");
+    iframe = wrapper.find("iframe");
   });
 
-  it("renders caption from data", function() {
-    expect(caption.prop("value")).toEqual(data.caption);
-  });
-
-  it("updates entity on caption change", function() {
-    caption.props().onChange({
-      target: {
-        value: "new caption"
-      }
-    });
-    expect(updateData).toBeCalledWith({ caption: "new caption" });
-  });
-
-  it("your tests here...", function() {
-    expect(true).toBeFalsy();
+  it("renders vimeo iframe from data", function() {
+    expect(iframe.prop("src")).toEqual(
+      `https://player.vimeo.com/video/${
+        data.embedData.id
+      }?color=ffffff&title=0&byline=0&portrait=0&badge=0`
+    );
   });
 });
